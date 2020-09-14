@@ -47,7 +47,49 @@
                 padding: 20px;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            
+            .grid-container {
+                display: grid;
+                column-gap: 20px;
+                position: relative;
+                left: calc(50% - 350px/2);
+                row-gap: 50px;
+                font-size: 18px;
+                max-width: 350px;
+                grid-gap: 10px;
+                grid-template-rows: 80px 80px;
+                grid-template-columns: 80px 80px 80px 80px;
+                grid-template-areas: 
+                    "a b c d"
+                    "e f g h"
+            }
+            .item {
+                align-self: center;
+                justify-self: center;
+            }
+            .area1 {
+                grid-area: a;
+            }
+            .area2 {
+                grid-area: b;
+            }
+            .area3 {
+                grid-area: c;
+            }
+            .area4 {
+                grid-area: d;
+            }
+            .area5 {
+                grid-area: e;
+            }
+            .area6 {
+                grid-area: f;
+            }
+            .area7 {
+                grid-area: g;   
+            }
+            .area8 {
+                grid-area: h;     
+            }
         </style>
     </head>
     <body>
@@ -67,6 +109,32 @@
             <form action="#">
                 <input type="text" id="search-input">
             </form>
+            <div class="grid-container">
+                <div class="item area1">
+                    Youtube
+                </div>
+                <div class="item area2">
+                    Facebook
+                </div>
+                <div class="item area3">
+                    Instagram
+                </div>
+                <div class="item area4">
+                    Twitter
+                </div>
+                <div class="item area5">
+                    Gmail
+                </div>
+                <div class="item area6">
+                    Odin
+                </div>
+                <div class="item area7">
+                    Guithub
+                </div>
+                <div class="item area8">
+                    shortcut
+                </div>
+            </div>
         </div>
     </body>
 </html>
